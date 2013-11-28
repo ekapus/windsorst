@@ -1,0 +1,186 @@
+﻿@model WindsorSt.Models.Car
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Car</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Owner)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Owner)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ReportingMarks)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ReportingMarks)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Color)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Color)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PaintSchemeNotes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PaintSchemeNotes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RoadNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RoadNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CTD)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CTD)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Blt)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Blt)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Srvc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Srvc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Length)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Length)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.GeneralCarType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.GeneralCarType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SpecificCarType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SpecificCarType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Service)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Service)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Manufacturer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Manufacturer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Item)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Item)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Weight)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Weight)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Wheels)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Wheels)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Trucks)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Trucks)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Couplers)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Couplers)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Weathered)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Weathered)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AcquisitionDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AcquisitionDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PricePaid)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PricePaid)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RepairsNeeded)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RepairsNeeded)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OnLayoutDestination)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OnLayoutDestination)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OffLayoutDestination)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OffLayoutDestination)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

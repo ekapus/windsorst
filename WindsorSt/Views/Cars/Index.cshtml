@@ -1,0 +1,171 @@
+﻿@model IEnumerable<WindsorSt.Models.Car>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReportingMarks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaintSchemeNotes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoadNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CTD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Blt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Srvc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GeneralCarType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SpecificCarType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Service)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Manufacturer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wheels)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Trucks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Couplers)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Weathered)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AcquisitionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PricePaid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RepairsNeeded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OnLayoutDestination)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OffLayoutDestination)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Owner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReportingMarks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaintSchemeNotes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RoadNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CTD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Blt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Srvc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GeneralCarType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SpecificCarType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Service)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Manufacturer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Item)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Weight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wheels)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trucks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Couplers)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Weathered)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AcquisitionDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PricePaid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RepairsNeeded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OnLayoutDestination)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OffLayoutDestination)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

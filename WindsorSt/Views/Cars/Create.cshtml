@@ -1,0 +1,219 @@
+﻿@model WindsorSt.Models.Car
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Car</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Owner)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Owner)
+            @Html.ValidationMessageFor(model => model.Owner)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ReportingMarks)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ReportingMarks)
+            @Html.ValidationMessageFor(model => model.ReportingMarks)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Color)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Color)
+            @Html.ValidationMessageFor(model => model.Color)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PaintSchemeNotes)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PaintSchemeNotes)
+            @Html.ValidationMessageFor(model => model.PaintSchemeNotes)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RoadNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RoadNumber)
+            @Html.ValidationMessageFor(model => model.RoadNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CTD)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CTD)
+            @Html.ValidationMessageFor(model => model.CTD)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Blt)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Blt)
+            @Html.ValidationMessageFor(model => model.Blt)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Srvc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Srvc)
+            @Html.ValidationMessageFor(model => model.Srvc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Length)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Length)
+            @Html.ValidationMessageFor(model => model.Length)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.GeneralCarType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.GeneralCarType)
+            @Html.ValidationMessageFor(model => model.GeneralCarType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SpecificCarType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SpecificCarType)
+            @Html.ValidationMessageFor(model => model.SpecificCarType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Service)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Service)
+            @Html.ValidationMessageFor(model => model.Service)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Manufacturer)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Manufacturer)
+            @Html.ValidationMessageFor(model => model.Manufacturer)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Item)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Item)
+            @Html.ValidationMessageFor(model => model.Item)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Weight)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Weight)
+            @Html.ValidationMessageFor(model => model.Weight)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Wheels)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Wheels)
+            @Html.ValidationMessageFor(model => model.Wheels)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Trucks)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Trucks)
+            @Html.ValidationMessageFor(model => model.Trucks)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Couplers)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Couplers)
+            @Html.ValidationMessageFor(model => model.Couplers)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Weathered)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Weathered)
+            @Html.ValidationMessageFor(model => model.Weathered)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AcquisitionDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AcquisitionDate)
+            @Html.ValidationMessageFor(model => model.AcquisitionDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PricePaid)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PricePaid)
+            @Html.ValidationMessageFor(model => model.PricePaid)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RepairsNeeded)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RepairsNeeded)
+            @Html.ValidationMessageFor(model => model.RepairsNeeded)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OnLayoutDestination)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OnLayoutDestination)
+            @Html.ValidationMessageFor(model => model.OnLayoutDestination)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OffLayoutDestination)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OffLayoutDestination)
+            @Html.ValidationMessageFor(model => model.OffLayoutDestination)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

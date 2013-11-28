@@ -13,6 +13,7 @@ namespace WindsorSt.Models
 
     public class Car
     {
+        public int Id { get; set; }
         public String Owner { get; set; }
         public String ReportingMarks { get; set; }
         public String Color { get; set; }

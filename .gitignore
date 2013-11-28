@@ -28,3 +28,8 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
+WindsorSt.suo
+WindsorSt/bin/WindsorSt.dll
+WindsorSt/bin/WindsorSt.pdb
+WindsorSt/obj/Debug/WindsorSt.dll
+WindsorSt/obj/Debug/WindsorSt.pdb

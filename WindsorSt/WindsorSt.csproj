@@ -171,6 +171,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Industry.cs" />
+    <Compile Include="Models\Train.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

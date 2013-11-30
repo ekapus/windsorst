@@ -19,12 +19,26 @@
                         @Html.Partial("_LoginPartial")
                     </section>
                     <nav>
-                        <ul id="menu">
+
+                    <ul id="menu">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Blocks", "Index", "Block")</li>
+                        <li>@Html.ActionLink("Cars", "Index", "Cars")</li>
+                        <li>@Html.ActionLink("Industries", "Index", "Industries")</li>
+                        <li>@Html.ActionLink("Layout Locations", "Index", "LayoutLocation")</li>
+                        <li>@Html.ActionLink("Locomotives", "Index", "Locomotives")</li>
+                        <li>@Html.ActionLink("Locomotive Statuses", "Index", "LocomotiveStatuses")</li>
+                        <li>@Html.ActionLink("Off Layout Destinations", "Index", "OfflayoutDestinations")</li>
+                        <li>@Html.ActionLink("Trains", "Index", "Trains")</li>
+                        <li>@Html.ActionLink("Train Types", "Index", "TrainTypes")</li>
+
+</ul> 
+      @*                  <ul id="menu">
                             <li>@Html.ActionLink("Home", "Index", "Home")</li>
                             <li>@Html.ActionLink("About", "About", "Home")</li>
                             <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         </ul>
-                    </nav>
+      *@              </nav>
                 </div>
             </div>
         </header>

@@ -8,7 +8,7 @@ namespace WindsorSt.Models
     public class Industry
     {
         public int Id { get; set; }
-        public String ServingTrain { get; set; }
+        public Block ServingBlock { get; set; }
         public String Name { get; set; }
         public String Category { get; set; }
         public String Line { get; set; }
@@ -16,7 +16,7 @@ namespace WindsorSt.Models
         public String Zone { get; set; }
         public String Track { get; set; }
         public String Spot { get; set; }
-        public String CarCount { get; set; }
+        public int CarCount { get; set; }
         public String Notes { get; set; }
         public String GeneralLocation { get; set; }
     }

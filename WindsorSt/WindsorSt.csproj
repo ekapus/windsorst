@@ -171,10 +171,13 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Block.cs" />
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Locomotive.cs" />
     <Compile Include="Models\Industry.cs" />
+    <Compile Include="Models\LocomotiveStatus.cs" />
     <Compile Include="Models\OfflayoutDestination.cs" />
     <Compile Include="Models\Train.cs" />
     <Compile Include="Models\TrainType.cs" />
+    <Compile Include="Models\WindsorStDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

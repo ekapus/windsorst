@@ -5,11 +5,9 @@ using System.Web;
 
 namespace WindsorSt.Models
 {
-    public class Train
+    public class LocomotiveStatus
     {
         public int Id { get; set; }
-        public String Symbol {get; set;}
-        public TrainType TrainType {get; set;}
-        public String Description { get; set; }
+        public String Name { get; set; }
     }
 }

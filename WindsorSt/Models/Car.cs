@@ -6,10 +6,7 @@ using System.Data.Entity;
 
 namespace WindsorSt.Models
 {
-    public class WindsorStDBContext : DbContext
-    {
-        public DbSet<Car> Cars { get; set; }
-    }
+    
 
     public class Car
     {
@@ -36,7 +33,8 @@ namespace WindsorSt.Models
         public String AcquisitionDate { get; set; }
         public String PricePaid { get; set; }
         public String RepairsNeeded { get; set; }
-        public String OnLayoutDestination { get; set; }
-        public String OffLayoutDestination { get; set; } 
+        public Industry OnLayoutDestination { get; set; }
+        public OfflayoutDestination OffLayoutDestination { get; set; }
+ 
     }
 }

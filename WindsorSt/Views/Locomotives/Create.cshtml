@@ -1,0 +1,59 @@
+﻿@model WindsorSt.Models.Locomotive
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Locomotive</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Owner)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Owner)
+            @Html.ValidationMessageFor(model => model.Owner)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ReportingMark)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ReportingMark)
+            @Html.ValidationMessageFor(model => model.ReportingMark)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RoadNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RoadNumber)
+            @Html.ValidationMessageFor(model => model.RoadNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Class)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Class)
+            @Html.ValidationMessageFor(model => model.Class)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

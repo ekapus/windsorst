@@ -14,5 +14,9 @@ namespace WindsorSt.Models
         public DbSet<OfflayoutDestination> OffLayoutDestinations { get; set; }
         public DbSet<Train> Trains { get; set; }
         public DbSet<TrainType> TrainTypes { get; set; }
+
+        public DbSet<Locomotive> Locomotives { get; set; }
+
+        public DbSet<LocomotiveStatus> LocomotiveStatus { get; set; }
     }
 }

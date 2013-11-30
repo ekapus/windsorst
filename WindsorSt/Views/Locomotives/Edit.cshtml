@@ -1,0 +1,61 @@
+﻿@model WindsorSt.Models.Locomotive
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Locomotive</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Owner)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Owner)
+            @Html.ValidationMessageFor(model => model.Owner)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ReportingMark)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ReportingMark)
+            @Html.ValidationMessageFor(model => model.ReportingMark)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RoadNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RoadNumber)
+            @Html.ValidationMessageFor(model => model.RoadNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Class)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Class)
+            @Html.ValidationMessageFor(model => model.Class)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

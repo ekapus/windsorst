@@ -18,5 +18,7 @@ namespace WindsorSt.Models
         public DbSet<Locomotive> Locomotives { get; set; }
 
         public DbSet<LocomotiveStatus> LocomotiveStatus { get; set; }
+
+        public DbSet<LayoutLocation> LayoutLocations { get; set; }
     }
 }

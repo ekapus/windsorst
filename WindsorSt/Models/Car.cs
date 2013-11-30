@@ -35,6 +35,6 @@ namespace WindsorSt.Models
         public String RepairsNeeded { get; set; }
         public Industry OnLayoutDestination { get; set; }
         public OfflayoutDestination OffLayoutDestination { get; set; }
- 
+        public LayoutLocation LayoutLocation { get; set; }
     }
 }

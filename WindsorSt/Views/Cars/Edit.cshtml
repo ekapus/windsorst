@@ -190,22 +190,6 @@
             @Html.ValidationMessageFor(model => model.RepairsNeeded)
         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.OnLayoutDestination)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.OnLayoutDestination)
-            @Html.ValidationMessageFor(model => model.OnLayoutDestination)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.OffLayoutDestination)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.OffLayoutDestination)
-            @Html.ValidationMessageFor(model => model.OffLayoutDestination)
-        </div>
-
         <p>
             <input type="submit" value="Save" />
         </p>

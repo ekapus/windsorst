@@ -77,12 +77,6 @@
         <th>
             @Html.DisplayNameFor(model => model.RepairsNeeded)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OnLayoutDestination)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OffLayoutDestination)
-        </th>
         <th></th>
     </tr>
 
@@ -153,12 +147,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.RepairsNeeded)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OnLayoutDestination)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OffLayoutDestination)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

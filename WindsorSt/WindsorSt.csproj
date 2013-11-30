@@ -166,9 +166,12 @@
     <Compile Include="Controllers\CarsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IndustriesController.cs" />
+    <Compile Include="Controllers\LayoutLocationController.cs" />
     <Compile Include="Controllers\LocomotivesController.cs" />
     <Compile Include="Controllers\LocomotiveStatusesController.cs" />
     <Compile Include="Controllers\OfflayoutDestinationsController.cs" />
+    <Compile Include="Controllers\TrainsController.cs" />
+    <Compile Include="Controllers\TrainTypesController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -176,6 +179,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Block.cs" />
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\LayoutLocation.cs" />
     <Compile Include="Models\Locomotive.cs" />
     <Compile Include="Models\Industry.cs" />
     <Compile Include="Models\LocomotiveStatus.cs" />
@@ -392,6 +396,51 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\OfflayoutDestinations\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trains\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trains\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trains\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trains\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Trains\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LayoutLocation\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LayoutLocation\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LayoutLocation\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LayoutLocation\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LayoutLocation\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\TrainTypes\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\TrainTypes\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\TrainTypes\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\TrainTypes\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\TrainTypes\Delete.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

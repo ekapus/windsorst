@@ -1,0 +1,85 @@
+﻿@model WindsorSt.Models.Industry
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Industry</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Category)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Category)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Line)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Line)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Zone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Zone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Track)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Track)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Spot)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Spot)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CarCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CarCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Notes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Notes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.GeneralLocation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.GeneralLocation)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

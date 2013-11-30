@@ -1,0 +1,107 @@
+﻿@model WindsorSt.Models.Industry
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Industry</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Category)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Category)
+            @Html.ValidationMessageFor(model => model.Category)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Line)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Line)
+            @Html.ValidationMessageFor(model => model.Line)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.City)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.City)
+            @Html.ValidationMessageFor(model => model.City)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Zone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Zone)
+            @Html.ValidationMessageFor(model => model.Zone)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Track)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Track)
+            @Html.ValidationMessageFor(model => model.Track)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Spot)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Spot)
+            @Html.ValidationMessageFor(model => model.Spot)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CarCount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CarCount)
+            @Html.ValidationMessageFor(model => model.CarCount)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Notes)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Notes)
+            @Html.ValidationMessageFor(model => model.Notes)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.GeneralLocation)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.GeneralLocation)
+            @Html.ValidationMessageFor(model => model.GeneralLocation)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -168,6 +168,7 @@
     <Compile Include="Controllers\IndustriesController.cs" />
     <Compile Include="Controllers\LocomotivesController.cs" />
     <Compile Include="Controllers\LocomotiveStatusesController.cs" />
+    <Compile Include="Controllers\OfflayoutDestinationsController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -376,6 +377,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\LocomotiveStatuses\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\OfflayoutDestinations\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\OfflayoutDestinations\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\OfflayoutDestinations\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\OfflayoutDestinations\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\OfflayoutDestinations\Delete.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

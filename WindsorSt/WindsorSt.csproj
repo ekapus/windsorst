@@ -172,6 +172,7 @@
     <Compile Include="Models\Block.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Industry.cs" />
+    <Compile Include="Models\OfflayoutDestination.cs" />
     <Compile Include="Models\Train.cs" />
     <Compile Include="Models\TrainType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
